@@ -11,16 +11,16 @@
 # puzzle_pieces([1, 2], [-1, -1]) ➞ False
 # puzzle_pieces([9, 8, 7], [7, 8, 9, 10]) ➞ False
 
-from typing import Optional
+# def puzzle_pieces([1, 2, 3], [4, 5, 6]) -> bool: # negerai
+#     sums = []
+#     for x, y in zip([1, 2, 3], [4, 5, 6]):
+#         sums.append(x + y)
+#     return sums
+#     print(sums)
+# # list1 = [1, 2, 3]
+# # list2 = [4, 5, 6]
+# result = puzzle_pieces([1, 2, 3], [4, 5, 6])
+# print(result)
 
-
-def add_lists([1, 2, 3], [4, 5, 6]):
-    sums = []
-    for x, y in zip([1, 2, 3], [4, 5, 6]):
-        sums.append(x + y)
-    return sums
-
-# list1 = [1, 2, 3]
-# list2 = [4, 5, 6]
-result = add_lists([1, 2, 3], [4, 5, 6])
-print(result)
+# Alberto  Python
+# from typing import Listdef can_find(bi_list: List[str], words_list: List[str]) -> bool:    check_list: list = [bi for bi in bi_list if any(bi in word for word in words_list)]    if check_list == bi_list:        return True    return False    # 4.3# can_find = lambda bi_list, words_list: True if bi_list == [x for x in bi_list if any(x in bi for bi in words_list)] else Falseprint(can_find(["at", "be", "th", "au"], ["beautiful", "the", "hat"]))print(can_find(["ay", "be", "ta", "cu"], ["maybe", "beta", "abet", "course"]))print(can_find(["th", "fo", "ma", "or"], ["the", "many", "for", "forest"]))print(can_find(["oo", "mi", "ki", "la"], ["milk", "chocolate", "cooks"]))
